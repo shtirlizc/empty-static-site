@@ -1,0 +1,10 @@
+._container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $container-full;
+  padding: 0 calc(var(--gap) / 2);
+
+  @include fullhd {
+    padding: 0;
+  }
+}
