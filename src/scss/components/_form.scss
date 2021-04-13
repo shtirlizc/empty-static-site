@@ -1,0 +1,11 @@
+._form {
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &--right {
+      text-align: right;
+    }
+  }
+}

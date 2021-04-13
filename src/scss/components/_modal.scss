@@ -1,0 +1,55 @@
+._modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  display: none;
+
+  &.open {
+    ._modal__bg {
+      opacity: 1;
+    }
+
+    ._modal__wrap {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity var(--delay) ease-in-out;
+  }
+
+  &__wrap {
+    @include hide-scrollbar;
+
+    max-width: 90%;
+    max-height: 90vh;
+    width: 520px;
+    opacity: 0;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    transform: scale(0.75);
+    transition: opacity var(--delay) ease-in-out,
+      transform var(--delay) ease-in-out;
+
+    @include mobile {
+      padding: 30px 20px;
+    }
+  }
+}

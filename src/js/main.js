@@ -1,5 +1,7 @@
-// import { mobileMenu } from "./mobileMenu";
+ import { textField } from "./textField";
+ import { phoneMask } from "./phoneMask";
 
 window.addEventListener("load", () => {
-  // mobileMenu();
+  textField();
+  phoneMask();
 });

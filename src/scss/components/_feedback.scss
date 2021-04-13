@@ -1,0 +1,26 @@
+._feedback {
+  &__title {
+    text-align: center;
+  }
+
+  &__form {
+    margin: 32px 0;
+  }
+
+  &__help {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+
+    a {
+      white-space: nowrap;
+      color: var(--primary);
+      border-bottom: 1px solid;
+      transition: border var(--delay);
+
+      &:hover {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
